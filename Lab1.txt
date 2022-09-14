@@ -10,9 +10,15 @@
 
 6. yes. You get a status code 418
 
-7. > <DT>X: <i>&lt;type 'instance'&gt;</i>
-   > <DD>MiniFieldStorage('X', 'Y')
+7. 
+> <DT>X: <i>&lt;type 'instance'&gt;</i>
+> <DD>MiniFieldStorage('X', 'Y')
+And
+> <DT> CONTENT_LENGTH <DD> 3
+> <DT> CONTENT_TYPE <DD> application/x-www-form-urlencoded
 
 Both of these were (significant) differences between outputs
+
+This is useful because it allows you to send arguments to the server and receive a response back
 
 8. https://raw.githubusercontent.com/Nova-Drive/CMPUT-404-Labs/master/requests_version.py
