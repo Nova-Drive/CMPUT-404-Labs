@@ -1,0 +1,11 @@
+1. https://github.com/Nova-Drive
+
+2. 2.22.0
+
+3. 2.28.1
+
+4. Different versions of requests. Installed on my machine is 2.28.1 but with the python script it shows 2.22.0. On the venv it shows 2.28.1.
+
+5. Code 301. To get the 200 response code you need to add www. To the URL. The correct command is curl -I GET http://www.google.com/
+
+6. Both the same...? Fixes it by going to www.google.com/teapot
