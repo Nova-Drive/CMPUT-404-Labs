@@ -8,4 +8,6 @@
 
 5. Code 301. To get the 200 response code you need to add www. To the URL. The correct command is curl -I GET http://www.google.com/
 
-6. Both the same...? Fixes it by going to www.google.com/teapot
+6. yes. You get a status code 418
+
+7. 
