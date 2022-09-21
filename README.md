@@ -1,2 +1,3 @@
 # CMPUT-404-Labs
-what the hell is a submodule???
+### what the hell is a submodule???
+I just want a normal folder...
