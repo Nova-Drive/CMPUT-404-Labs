@@ -1,0 +1,7 @@
+HOW TO START VENV
+
+1. Create one if not there by doing virtualenv ~name~ --python=python3
+
+2. Activate by doing source ~name~/bin/activate
+
+3. Quit by doing deactivate
