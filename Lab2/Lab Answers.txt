@@ -1,0 +1,11 @@
+1. Give a socket
+
+2. Server needs to identify port, client does not. Client needs to initialize connection, server does not.
+
+3. Use setsockopt to set socket.SO_REUSEADDR to true
+
+4. We got the address of the client
+
+5. b'Foobar\n' (I think...?) 
+
+6.

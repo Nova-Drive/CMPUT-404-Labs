@@ -1,0 +1,43 @@
+Sockets
+
+-need to open on both server and client side
+
+SERVER SIDE
+open socket (need address family (IPV4), transfer protocol))
+bind the server to an address and a port (localhost, any port)
+Listen to this^ (any incoming connections)
+
+CLIENT SIDE
+
+
+
+
+
+
+Proxy Diagram:
+
+Server (Google.com)	<----	Proxy	<----			Client
+Open socket		open socket (communicate w/ client)	open socket
+			open socket (communicate w/ server)
+
+
+
+Writing code part:
+
+1. Connect proxy client to proxy server
+2. Send something to proxy server
+3. Connect proxy server to google
+4. Forward client message to google
+5. Receive response back
+6. Send response from proxy server to proxy client
+
+
+
+Multiprocessing:
+From multiprocessing import Process
+
+Whenever you make a connection to another server from the proxy server (ex. a connection to google), throw everything after said connection into a process, including shutting down said connection. 
+
+Process code -> p = Process(target=~handler~, args=~args for handler~)
+		p.daemon = True
+		p.start()
