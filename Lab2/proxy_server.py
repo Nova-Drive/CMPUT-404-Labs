@@ -33,7 +33,7 @@ def main():
             host = "www.google.com"
             port = 80
             payload = f'GET / HTTP/1.0\r\nHost: {host}\r\n\r\n'
-            buffer_size = 4096
+            
             g_socket = create_tcp_socket()
             
             remote_ip = get_remote_ip(host)
@@ -53,7 +53,7 @@ def main():
             
 def handle_echo(g_socket, payload, conn):
     new_full_data = b""
-    
+    buffer_size = 4096
     #send the data and shutdown
     send_data(g_socket, payload)
     g_socket.shutdown(socket.SHUT_WR)
