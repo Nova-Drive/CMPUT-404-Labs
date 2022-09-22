@@ -6,6 +6,6 @@
 
 4. We got the address of the client
 
-5. b'Foobar\n' (I think...?) 
+5. Footer
 
-6.
+6. https://github.com/Nova-Drive/CMPUT-404-Labs/tree/master/Lab2
